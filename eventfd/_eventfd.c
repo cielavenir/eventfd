@@ -2,7 +2,7 @@
 #include <sys/eventfd.h>
 
 
-static PyObject * _eventfd(PyObject *self) {
+static PyObject * _eventfd(PyObject *self, PyObject *args) {
     int result;
 
     Py_BEGIN_ALLOW_THREADS
